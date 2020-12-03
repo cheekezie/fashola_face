@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 40rem;
+    text-align: center;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    .face{
+        border: 1px solid #a09c9c;
+        padding: 8rem 6rem;
+        border-radius: 50%;
+        position: relative;
+        
+        .neck{
+            border-left:  1.8px solid #a09c9c;
+            border-right:  1.8px solid #a09c9c;
+            position: absolute;
+            background: #fff;
+            bottom: 0;
+            background: #fff;
+            bottom: -.7rem;
+            left: 25%;
+            right: 25%;
+            height: 1.7rem;
+            &::before, &::after{
+                content: '';
+                z-index: -1;
+                position: absolute;
+                height: 7rem;
+                background: #a09c9c;
+                width: 1px;
+                right: -1rem;
+                bottom: 0;
+                bottom: -4rem;
+            }
+            &::after{
+                left: -1rem;
+                transform: rotate(60deg)
+            }
+            &::before{
+                right: -1rem;
+                transform: rotate(-60deg)
+            }
+        }
+    }
+}
