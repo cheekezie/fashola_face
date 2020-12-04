@@ -1,65 +1,50 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .wrapper {
-  width: 40rem;
-  text-align: center;
-  padding-top: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: flex;
+    width: fit-content;
 }
 
 .wrapper .face {
-  border: 1px solid #a09c9c;
-  padding: 8rem 6rem;
-  border-radius: 50%;
-  position: relative;
+    width: 350px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid #a09c9c;
+    border-bottom: 1px solid transparent;
+    position: relative;
 }
 
 .wrapper .face .neck {
-  border-left: 1.8px solid #a09c9c;
-  border-right: 1.8px solid #a09c9c;
-  position: absolute;
-  background: #fff;
-  bottom: 0;
-  background: #fff;
-  bottom: -.7rem;
-  left: 25%;
-  right: 25%;
-  height: 1.7rem;
+    border-left: 1.8px solid #a09c9c;
+    border-right: 1.8px solid #a09c9c;
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    bottom: .9rem;
+    left: 16%;
+    right: 16%;
+    height: 2.7rem;
 }
 
-.wrapper .face .neck::before, .wrapper .face .neck::after {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 7rem;
-  background: #a09c9c;
-  width: 1px;
-  right: -1rem;
-  bottom: 0;
-  bottom: -4rem;
+.wrapper .face .neck::before,
+.wrapper .face .neck::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    height: 6rem;
+    background: #a09c9c;
+    width: 1px;
+    right: 0rem;
+    bottom: 0;
+    bottom: -4.2rem;
 }
 
 .wrapper .face .neck::after {
-  left: -1rem;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+    left: -2.8rem;
+    -webkit-transform: rotate(66deg);
+    transform: rotate(66deg);
 }
 
 .wrapper .face .neck::before {
-  right: -1rem;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+    right: -2.8rem;
+    -webkit-transform: rotate(-66deg);
+    transform: rotate(-66deg);
 }
-/*# sourceMappingURL=style.css.map */
